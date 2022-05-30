@@ -46,7 +46,11 @@ const strOfNames: string = users.map((elem: IUsers): string => elem.name).join('
 
 // 2
 const counterCarsOfUsers = (usersData: IUsers[]) => {
+<<<<<<< HEAD
   const res = usersData.reduce((acc: number, user) => {
+=======
+  const res = usersData.reduce((acc, user) => {
+>>>>>>> 31d5ab9ce4e3aae7bbbbc9bc6b365df567c800b7
     return user.cars != undefined ? acc + user.cars.length : acc
   }, 0)
 
