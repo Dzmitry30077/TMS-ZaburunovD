@@ -45,25 +45,25 @@ const users: IUsers[] = [
 // const strOfNames: string = users.map((elem: IUsers): string => elem.name).join(', ');
 
 // 2
-// const counterCarsOfUsers = (usersData: IUsers[]) => {
-//   const res = usersData.reduce((acc, user) => {
-//     return user.cars != undefined ? acc + user.cars.length : acc
-//   }, 0)
+const counterCarsOfUsers = (usersData: IUsers[]) => {
+  const res = usersData.reduce((acc, user) => {
+    return user.cars != undefined ? acc + user.cars.length : acc
+  }, 0)
 
-//   return res
-// }
+  return res
+}
 
 //3
-// const educationFilter = (usersData: IUsers[]) => {
-//     const res = usersData.filter(user => user.hasEducation)
-//     return res
-// }
+const educationFilter = (usersData: IUsers[]) => {
+    const res = usersData.filter(user => user.hasEducation)
+    return res
+}
 
 //4
-// const hasAnimalsOfUsers = (usersData: IUsers[]) => {
-//   const res = usersData.filter(user => user.animals)
-//   return res
-// }
+const hasAnimalsOfUsers = (usersData: IUsers[]) => {
+  const res = usersData.filter(user => user.animals)
+  return res
+}
 
 //5
 
@@ -77,5 +77,3 @@ const carsOfUsers = (usersData: IUsers[]) => {
 
   return res.join(', ')
 }
-
-console.log(carsOfUsers(users));
